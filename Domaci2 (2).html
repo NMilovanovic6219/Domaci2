@@ -1,0 +1,113 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Domaci2</title>
+
+    <style>
+
+        *
+        {
+            font-style: italic;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        .table{
+            border: 2px rgb(19, 180, 100);
+            background-color:  #27f36b; 
+            border-collapse: collapse;
+        }
+        th,td{
+            background-color: #27f36b;
+        }
+        .dataBlue{
+            background-color:  #1C86EE;
+        }
+        .dataYellow{
+            background-color:yellow;
+        }
+        #id
+        {
+            background-color: #27f36b;
+            color: #ff0000;
+        }
+
+        .forma
+        {
+            margin-left:500px;
+            border: 2px  solid green ;
+            width: 500px;
+            padding: 20px;
+            
+        }
+
+        .label
+        {
+            margin-right: 50px;
+        }
+        .label2
+        {
+            text-align:right;
+            width: 70px;
+            display: inline-block;
+            padding-left: 100px;
+            padding-bottom: 20px;
+        }
+       
+       .dugme
+        {
+           margin-left: 176px;
+           padding: 2px 20px 2px 20px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <table class="table" border="2px" >
+        <tr>
+            <th class="dataBlue" align="center" >Ime</th>
+            <th class="dataYellow" align="right" >Prezime</th>
+            <th align="left">JMBG</th>
+        </tr>
+        <tr>
+            <td class="dataBlue" align="center">Andjelko </td>
+            <td class="dataYellow" align="right">Ilic</td>
+            <td align="left">0315487945120</td>
+        </tr>
+        <tr>
+            <td  align="center" id="id">Milos </td>
+            <td align="right" id="id">Obilic</td>
+            <td  align="left" id="id">0315487945120</td>
+        </tr>
+        <tr>
+            <td class="dataBlue" align="center">Nikola </td>
+            <td class="dataYellow" align="right">Milovanovic</td>
+            <td align="left">0315487945120</td>
+        </tr>
+    </table>
+    
+    <form action="#" method="FORM" class="forma"  >
+        
+        <label for="ime" class="label2">Ime</label>
+        <input type="text" name="ime" placeholder="Unesite vase ime" class="label">
+    
+        <label for="prezime" class="label2">Prezime</label>
+        <input type="text" name="prezime" placeholder="Unesite vase prezime" class="label" >
+
+        <label for="jmbg" class="label2">JMBG</label>
+        <input type="text" name="jmbg" placeholder="Unesite vas JMBG" minlength="13" class="label">
+
+        <input type="submit" value="Potvrdi" class="dugme">
+
+    </form>   
+    <table>
+        <tr></tr>
+    </table> 
+
+</body>
+</html>
